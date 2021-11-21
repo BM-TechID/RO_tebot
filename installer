@@ -4,7 +4,7 @@ echo -e "  auto installer remote openwrt\n";sleep 2
 opkg update && opkg install openssh-server screen wget
 echo -e "\nBuilding Publickey...";sleep 1
 echo y|ssh-keygen -t ed25519 -f /root/.ssh/id_xderm -N ""
-https://raw.githubusercontent.com/BM-TechID/ro_bot/main/remote
+wget -O /usr/bin/remote "https://raw.githubusercontent.com/BM-TechID/ro_bot/main/remote"
 chmod +x /usr/bin/remote;killall -q remote;screen -d -m remote
  if [ ! -f $(cat /etc/rc.local|grep exit|awk '{print $1}' 2>/dev/null) ]; then
   if [ -f $(cat /etc/rc.local|grep remote|grep screen|awk '{print $1}' 2>/dev/null) ]; then
