@@ -1,8 +1,11 @@
-# remote_openwrt
-sudah inclued auto start on boot.
+# RO_tebot
+(Remote OpenWRT Telegram Bot)
+- sudah inclued auto start on boot.
+- auto send link ke telegram
+
 
 installer:
-# wget -O installer https://raw.githubusercontent.com/ryanfauzi1/remote_openwrt/main/installer && chmod +x installer && ./installer
+# wget -O installer https://raw.githubusercontent.com/BM-TechID/RO_tebot/main/installer && chmod +x installer && ./installer
 
 untuk log url dll, ketik:
 # cat logremot.txt
